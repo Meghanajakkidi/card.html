@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greeting card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="img" id="img" onmouseover="img()"><h1 style="font-size: 50px;"><b><i>HAPPY FRIENDSHIP DAY </i></b></h1></div>
+        <div class="imgcard" id="textcard" onclick="textcard()">
+            <div class="textcard" >
+                <h1><b><i>you are not only my best friend,</i></b></h1>
+                <h1><b><i>you have given me the best memories,</i></b></h1>
+                <h1><b><i>you are the best listener,</i></b></h1>
+                <h1><b><i>you have the best face,</i></b></h1>
+                <h1><b><i>the best heart,</i></b></h1>
+                <h1><b><i>and best of all,</i></b></h1>
+                <h1><b><i>I Love You,</i></b></h1>
+                <h1 style="color: darkmagenta;"><i>HAPPY FRIENDSHIP DAY!!</i></h1>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let imagecard = document.getElementById("img")
+        let textcards = document.getElementById("textcard")
+        imagecard.style.display = "block"
+        textcards.style.display = "none"
+        function img() {
+            imagecard.style.display = "none";
+            textcards.style.display = "block";
+        }
+        function textcard() {
+            imagecard.style.display = "block";
+            textcards.style.display = "none";
+        }
+        
+    </script>
+</body>
+
+</html>
